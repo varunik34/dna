@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA Data Storage Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <h1>DNA Data Storage Project</h1>
+
+    <!-- Rotating DNA Image -->
+    <div class="image-container">
+        <img id="rotatingImage" src="F:/data/upd.png" alt="Rotating DNA Image" class="rotating" />
+    </div>
+
+    <!-- File Upload Section -->
+    <div class="file-upload-section">
+        <h2>Upload File to Convert into DNA Sequence</h2>
+        <input type="file" id="fileInput" />
+        <button onclick="convertToDNA()">Convert to DNA</button>
+    </div>
+
+    <!-- Binary Representation -->
+    <div class="output-section">
+        <h3>Binary Representation:</h3>
+        <pre id="binaryOutput"></pre>
+        <button onclick="copyToClipboard('binaryOutput')">Copy Binary</button>
+    </div>
+
+    <!-- DNA Sequence -->
+    <div class="output-section">
+        <h3>DNA Sequence:</h3>
+        <pre id="dnaOutput"></pre>
+        <button onclick="copyToClipboard('dnaOutput')">Copy DNA</button>
+    </div>
+
+    <!-- Decoded Image -->
+    <div class="output-section">
+        <h3>Decoded Image:</h3>
+        <img id="decodedImage" src="" alt="Decoded Image" style="display: none;" />
+        <button onclick="confirmDecode()">Decode DNA</button>
+        <pre id="decodedBinaryOutput" style="display: none;"></pre>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

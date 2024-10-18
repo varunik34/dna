@@ -1,0 +1,113 @@
+/* General body styling */
+body {
+    background-image: url('F:/data/updna.jfif'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: #ffffff; /* Text color for contrast */
+    font-family: 'Montserrat', Arial, sans-serif; /* Use modern font */
+}
+
+/* Title styles */
+h1 {
+    font-size: 3.5em; /* Larger font size for the main heading */
+    background: linear-gradient(90deg, #00ffcc, #ff00cc); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the background to text */
+    -webkit-text-fill-color: transparent; /* Fill color for text */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Shadow effect for depth */
+    padding: 20px; /* Padding around the title */
+    margin: 20px 0; /* Space above and below the title */
+    letter-spacing: 0.1em; /* Space between letters */
+    text-align: center; /* Center text */
+    animation: pulse 1.5s infinite; /* Add a pulse effect */
+}
+
+/* Pulse animation for the title */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* File upload and output section styling */
+.file-upload-section, .output-section {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px; /* Padding around sections */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px auto; /* Margin between sections and centered */
+    width: 90%; /* Responsive width */
+    max-width: 800px; /* Max width to keep sections readable */
+    text-align: center; /* Center content */
+}
+
+/* Heading styles to mimic the font in the image */
+h2, h3 {
+    font-family: 'Montserrat', Arial, sans-serif; /* Use modern, minimalistic font */
+    text-align: center; /* Center text */
+    letter-spacing: 0.15em; /* Space between letters */
+    font-weight: 700; /* Bold for headings */
+    color: #ffffff; /* Ensure contrast */
+}
+
+/* Additional styling for headings */
+h2, h3 {
+    font-size: 1.8em; /* Smaller heading sizes */
+}
+
+/* Button styling to match the clean look */
+button {
+    font-family: 'Montserrat', Arial, sans-serif; /* Font for buttons */
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove borders */
+    border-radius: 30px; /* Rounded button */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1.2em; /* Button font size */
+    margin-top: 10px; /* Spacing above button */
+    letter-spacing: 0.1em; /* Slightly spaced letters */
+}
+
+button:hover {
+    background-color: #000000; /* Invert colors on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Output sections for binary and DNA sequence */
+pre {
+    font-family: 'Courier New', monospace; /* Use monospaced font for binary/DNA */
+    font-size: 1.2em; /* Readable font size */
+    color: #00ff00; /* Light green to stand out against the dark background */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 10px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded edges */
+    overflow-x: auto; /* Allow scrolling for long content */
+}
+
+/* Image output section */
+img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Spacing above image */
+    display: block; /* Block to ensure proper layout */
+}
+
+/* Rotating image styling */
+.image-container {
+    text-align: center; /* Center the rotating image */
+}
+
+.rotating {
+    animation: rotate 10s linear infinite; /* Infinite rotation animation */
+}
+
+@keyframes rotate {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
